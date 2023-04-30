@@ -4,10 +4,20 @@
 }
 
 html {
-    font-size: 100%;
+    font-size: 10px;
     font-family: Arial, sans-serif;
 }
 
 body {
-    background: #cecaca;
+    background: #cecaca;    
+}
+
+.main, .footer{
+    width: 120rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.output{
+    width: 100%;
 }
