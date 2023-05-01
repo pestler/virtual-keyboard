@@ -9,15 +9,144 @@ html {
 }
 
 body {
-    background: #cecaca;    
+    background: #cecaca;
 }
 
-.main, .footer{
-    width: 120rem;
+.main,
+.footer {
+    max-width: 120rem;
     text-align: center;
     margin: 0 auto;
 }
 
-.output{
+.output {
     width: 100%;
+}
+
+.keyboard-container {
+    display: grid;
+    grid-row-gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    background: cadetblue;
+    border-radius: 1rem;
+    border: 3px solid rgb(49, 58, 52);
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+}
+
+.keyboard-rows__button {
+    display: grid;
+    grid-gap: 1rem;
+    grid-row-gap: 1rem;
+    height: 5rem;
+}
+
+.keyboard__button {
+    display: flex;
+    cursor: pointer;
+    border-radius: 9px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(230, 230, 230, 0.75);
+    box-shadow: inset rgba(128, 119, 119, 0.75) -1px -1px 2px, inset rgba(248, 235, 235, 0.9) 1px 1px 2px, rgba(8, 8, 8, 0.8) 1px 1px 2px -1px;
+    transition: all .3s ease;
+}
+
+.topSymbol {
+    width: 100%;
+    color: #68688a;
+    text-align: left;
+    padding-left: 1rem;
+    transition: all .3s ease;
+}
+
+.symbol {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    transition: all .2s ease;
+}
+
+[data-darkbutton="true"] {
+    background: rgb(134, 129, 129);
+    box-shadow: inset rgba(39, 37, 37, 0.75) -1px -1px 2px, inset rgba(161, 160, 160, 0.9) 1px 1px 2px, rgba(0, 0, 0, .8) 1px 1px 2px -1px;
+}
+
+[data-darkbutton="true"]>.symbol {
+    font-size: 1.6rem;
+}
+
+[data-code="CapsLock"] {
+    width: 8.6rem;
+}
+
+[data-code="Enter"],
+[data-code="ShiftLeft"] {
+    width: 10rem;
+}
+
+[data-code="ShiftRight"] {
+    width: 14.5rem;
+}
+
+[data-code="ControlRight"] {
+    width: 6rem;
+}
+
+[data-code="Backspace"] {
+    width: 11.5rem;
+}
+
+[data-code="Space"] {
+    width: 53rem;
+}
+
+[data-code="ControlLeft"],
+[data-code="Tab"],
+[data-code="AltLeft"],
+[data-code="AltRight"] {
+    width: 7.6rem;
+}
+[data-code="ArrowUp"],
+[data-code="ArrowDown"],
+[data-code="ArrowLeft"],
+[data-code="ArrowRight"]{
+    width:7.4rem;
+}
+
+
+.active {
+    background: rgb(163, 159, 159);
+}
+
+.symbols {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+    transition: all .1s ease;
+}
+
+.title{
+    font-size: 200%;
+    margin: 1rem;
+}
+
+.title-lang{
+    font-size: 215%;
+    margin: 1rem;
+}
+
+.textarea{
+    resize: none;
+    width: 100%;
+    height: 25vh;
+    padding: 1rem;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 2rem;    
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
