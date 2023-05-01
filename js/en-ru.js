@@ -211,9 +211,9 @@ export const language = {
       code: 'Enter',
     },
     {
-      small: 'large',
+      small: 'Shift',
       large: null,
-      code: 'largeLeft',
+      code: 'ShiftLeft',
     },
     {
       small: 'z',
@@ -271,9 +271,9 @@ export const language = {
       code: 'ArrowUp',
     },
     {
-      small: 'large',
+      small: 'Shift',
       large: null,
-      code: 'largeRight',
+      code: 'ShiftRight',
     },
     {
       small: 'Ctrl',
@@ -533,9 +533,9 @@ export const language = {
       code: 'Enter',
     },
     {
-      small: 'large',
+      small: 'Shift',
       large: null,
-      code: 'largeLeft',
+      code: 'ShiftLeft',
     },
     {
       small: 'я',
