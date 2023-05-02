@@ -64,7 +64,7 @@ body {
 }
 
 .symbol {
-    font-size: 3rem;
+    font-size: 2.4rem;
     width: 100%;
     text-align: center;
     transition: all .2s ease;
@@ -76,6 +76,10 @@ body {
 }
 
 [data-darkbutton="true"]>.symbol {
+    font-size: 1.6rem;
+}
+
+.topSymbol {
     font-size: 1.6rem;
 }
 
@@ -110,11 +114,12 @@ body {
 [data-code="AltRight"] {
     width: 7.6rem;
 }
+
 [data-code="ArrowUp"],
 [data-code="ArrowDown"],
 [data-code="ArrowLeft"],
-[data-code="ArrowRight"]{
-    width:7.4rem;
+[data-code="ArrowRight"] {
+    width: 7.4rem;
 }
 
 
@@ -129,24 +134,35 @@ body {
     transition: all .1s ease;
 }
 
-.title{
+.title {
     font-size: 200%;
     margin: 1rem;
 }
 
-.title-lang{
+.title-lang {
     font-size: 215%;
     margin: 1rem;
 }
 
-.textarea{
+.textarea {
     resize: none;
     width: 100%;
     height: 25vh;
     padding: 1rem;
     border-radius: 5px;
     box-sizing: border-box;
-    font-size: 2rem;    
+    font-size: 2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+
+.active {
+    background: rgb(135, 149, 121);
+}
+
+[data-darkbutton="false"].active .symbol,
+[data-darkbutton="true"].active .symbol,
+.active .darkbutton {
+    transform: translateY(.5rem);    
+    transition: all 2s ease;
 }
