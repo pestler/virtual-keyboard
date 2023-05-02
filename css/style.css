@@ -163,5 +163,6 @@ body {
 [data-darkbutton="false"].active .symbol,
 [data-darkbutton="true"].active .symbol,
 .active .darkbutton {
-    transform: translateY(1px);
+    transform: translateY(.5rem);    
+    transition: all 2s ease;
 }
