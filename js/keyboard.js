@@ -84,7 +84,7 @@ export default class Keyboard {
       ? language[langButton[langInd += 1]]
       : language[langButton[langInd -= 1]];
     this.container.dataset.language = langButton[langInd];
-    storage.setStorage('keyboardLanguage', langButton[langInd]);
+    storage.setStorage('keyboardLanguage', langButton[langInd]);   
     this.keyButtons.forEach((but) => {
       const objKey = this.keyBase.find((key) => key.code === but.code);
       if (!objKey) return;
@@ -97,5 +97,6 @@ export default class Keyboard {
       }
       but.symbol.innerHTML = objKey.small;
     });
+    footer.lastChild.innerHTML = MSGS[langInd];
   };
 }
