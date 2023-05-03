@@ -1,5 +1,7 @@
-import { language, rowsButtons } from './en-ru.js';
+/* eslint-disable import/extensions */
+import * as language from './en-ru.js';
 import Keyboard from './keyboard.js';
-import { set, get } from "./storage.js";
-const lang = 'en';
-new Keyboard(rowsButtons).init(lang).generatePage();
+import * as storage from './storage.js';
+
+const lang = storage.getStorage('keyboardLanguage', '"en"');
+new Keyboard(language.rowsButtons).init(lang).generatePage();
